@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Top View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageView_with_Container" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TopViewController" customModule="PageView_with_Container" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,15 +45,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="LoF-cr-iXY" id="tku-qH-zej"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Container View Controller-->
         <scene sceneID="hGG-Jr-1ch">
             <objects>
-                <viewController id="9ex-Ht-VH3" sceneMemberID="viewController">
+                <viewController id="9ex-Ht-VH3" customClass="ContainerViewController" customModule="PageView_with_Container" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nyh-iY-Fp0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +108,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F8A-QC-huU"/>
                     </view>
+                    <connections>
+                        <outlet property="contentScroller" destination="ij5-Hi-KNy" id="HdC-L2-4ag"/>
+                        <outlet property="lineSegment" destination="jRY-vo-XiO" id="XsF-vk-uTs"/>
+                        <outlet property="titleScroller" destination="VYF-G3-i5P" id="jGz-NZ-Af9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYf-cY-9aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
