@@ -118,5 +118,30 @@
             </objects>
             <point key="canvasLocation" x="1013.6" y="25.187406296851577"/>
         </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="Wle-X0-So3">
+            <objects>
+                <viewController id="Buw-E3-0QT" customClass="LoadingViewController" customModule="PageView_with_Container" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kf-DY-W8b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IC1-7A-yxE">
+                                <rect key="frame" x="169.5" y="315.5" width="37" height="37"/>
+                                <color key="color" red="0.11628645210000001" green="0.26430446169999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IC1-7A-yxE" firstAttribute="centerX" secondItem="0kf-DY-W8b" secondAttribute="centerX" id="KNf-tX-8JH"/>
+                            <constraint firstItem="IC1-7A-yxE" firstAttribute="centerY" secondItem="0kf-DY-W8b" secondAttribute="centerY" id="aSc-zU-yOh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8rq-4k-iy6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zc-0d-l13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="569"/>
+        </scene>
     </scenes>
 </document>
