@@ -37,5 +37,12 @@ class TopViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
 
+    @IBAction func onTappedRefresh(_ sender: UIBarButtonItem) {
+        guard let container = self.childViewControllers.compactMap({ $0 as? ContainerViewController }).first else {
+            return
+        }
+        container.updateContent()
+    }
+    
 }
 

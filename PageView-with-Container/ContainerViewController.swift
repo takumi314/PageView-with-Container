@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol Refreshable {
+    func updateContent()
+}
+
 class ContainerViewController: UIViewController {
 
     @IBOutlet private weak var titleScroller: UIScrollView!
@@ -24,6 +28,7 @@ class ContainerViewController: UIViewController {
 
         // add ChildViewController
         add(loadingVC)
+        print("losding ...")
 
         // Loading
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
@@ -44,4 +49,25 @@ class ContainerViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+}
+
+extension ContainerViewController: Refreshable {
+
+    func updateContent() {
+        let loadingVC = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: LoadingViewController.identifier)
+
+        // fit in the container view size
+        loadingVC.view.frame = self.view.frame
+
+        // add ChildViewController
+        add(loadingVC)
+        print("losding ...")
+
+        // Loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            loadingVC.remove()
+            print("stop!")
+        }
+    }
+
 }
