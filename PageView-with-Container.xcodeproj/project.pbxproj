@@ -14,6 +14,8 @@
 		E1D4EDD820EFC5720030EAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D4EDD620EFC5720030EAB7 /* LaunchScreen.storyboard */; };
 		E1D4EDE320EFC5730030EAB7 /* PageView_with_ContainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDE220EFC5730030EAB7 /* PageView_with_ContainerUITests.swift */; };
 		E1D4EDEE20EFD3BC0030EAB7 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDED20EFD3BC0030EAB7 /* ContainerViewController.swift */; };
+		E1D4EDF020F068130030EAB7 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */; };
+		E1D4EDF120F068130030EAB7 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		E1D4EDE220EFC5730030EAB7 /* PageView_with_ContainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView_with_ContainerUITests.swift; sourceTree = "<group>"; };
 		E1D4EDE420EFC5730030EAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D4EDED20EFD3BC0030EAB7 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				E1D4EDD420EFC5720030EAB7 /* Assets.xcassets */,
 				E1D4EDD620EFC5720030EAB7 /* LaunchScreen.storyboard */,
 				E1D4EDD920EFC5720030EAB7 /* Info.plist */,
+				E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */,
 			);
 			path = "PageView-with-Container";
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 			files = (
 				E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */,
 				E1D4EDEE20EFD3BC0030EAB7 /* ContainerViewController.swift in Sources */,
+				E1D4EDF020F068130030EAB7 /* DeviceSize.swift in Sources */,
 				E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4EDF120F068130030EAB7 /* DeviceSize.swift in Sources */,
 				E1D4EDE320EFC5730030EAB7 /* PageView_with_ContainerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
