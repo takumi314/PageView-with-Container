@@ -18,6 +18,10 @@
 		E1D4EDF120F068130030EAB7 /* DeviceSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */; };
 		E1D4EDF320F06D4A0030EAB7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */; };
 		E1D4EDF420F06D4A0030EAB7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */; };
+		E1D4EDF620F06EC30030EAB7 /* Identiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF520F06EC30030EAB7 /* Identiable.swift */; };
+		E1D4EDF720F06EC30030EAB7 /* Identiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF520F06EC30030EAB7 /* Identiable.swift */; };
+		E1D4EDF920F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF820F070E60030EAB7 /* UIViewControllerExtension.swift */; };
+		E1D4EDFA20F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDF820F070E60030EAB7 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		E1D4EDED20EFD3BC0030EAB7 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSize.swift; sourceTree = "<group>"; };
 		E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		E1D4EDF520F06EC30030EAB7 /* Identiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identiable.swift; sourceTree = "<group>"; };
+		E1D4EDF820F070E60030EAB7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 				E1D4EDD920EFC5720030EAB7 /* Info.plist */,
 				E1D4EDEF20F068130030EAB7 /* DeviceSize.swift */,
 				E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */,
+				E1D4EDF520F06EC30030EAB7 /* Identiable.swift */,
+				E1D4EDF820F070E60030EAB7 /* UIViewControllerExtension.swift */,
 			);
 			path = "PageView-with-Container";
 			sourceTree = "<group>";
@@ -208,10 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4EDF620F06EC30030EAB7 /* Identiable.swift in Sources */,
 				E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */,
 				E1D4EDEE20EFD3BC0030EAB7 /* ContainerViewController.swift in Sources */,
 				E1D4EDF320F06D4A0030EAB7 /* LoadingViewController.swift in Sources */,
 				E1D4EDF020F068130030EAB7 /* DeviceSize.swift in Sources */,
+				E1D4EDF920F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
 				E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D4EDF720F06EC30030EAB7 /* Identiable.swift in Sources */,
 				E1D4EDF120F068130030EAB7 /* DeviceSize.swift in Sources */,
+				E1D4EDFA20F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
 				E1D4EDE320EFC5730030EAB7 /* PageView_with_ContainerUITests.swift in Sources */,
 				E1D4EDF420F06D4A0030EAB7 /* LoadingViewController.swift in Sources */,
 			);

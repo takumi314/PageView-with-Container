@@ -17,6 +17,19 @@ class ContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let loadingVC = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: LoadingViewController.identifier)
+
+        // fit in the container view size
+        loadingVC.view.frame = self.view.frame
+
+        // add ChildViewController
+        add(loadingVC)
+
+        // Loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            loadingVC.remove()
+            print("stop!")
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
