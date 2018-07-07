@@ -19,7 +19,7 @@ extension Refreshable where Self: ContainerViewController {
         let loadingVC = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: LoadingViewController.identifier)
 
         // fit in the container view size
-        self.view.frame = self.view.frame
+        loadingVC.view.frame = self.view.frame
 
         // add ChildViewController
         add(loadingVC)
@@ -42,6 +42,14 @@ class ContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
         let loadingVC = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: LoadingViewController.identifier)
 
@@ -57,14 +65,7 @@ class ContainerViewController: UIViewController {
             loadingVC.remove()
             print("stop!")
         }
-    }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
