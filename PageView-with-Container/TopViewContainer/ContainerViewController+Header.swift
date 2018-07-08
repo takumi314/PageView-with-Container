@@ -48,7 +48,7 @@ class TitleLabel: UILabel {
 
 extension ContainerViewController: TitleScrollViewDelegate {
 
-    func updateHeaer<T: HeaderCompatible>(items: [T]) {
+    public func updateHeaer<T: HeaderCompatible>(items: [T]) {
 
         self.titleScroller.titleDelegate = self
 
@@ -57,7 +57,7 @@ extension ContainerViewController: TitleScrollViewDelegate {
 
         var valueX: CGFloat = 0.0
         var index: Int = 0
-        valueX += UIScreen.main.bounds.width - titleWidth / 2.0
+        valueX += DeviceSize.screenWidth - titleWidth / 2.0
 
         for title in titles {
 
@@ -91,7 +91,9 @@ extension ContainerViewController: TitleScrollViewDelegate {
         self.titleScroller.addGestureRecognizer(tap)
     }
 
-    @objc func scrollerTapped(_ gesture: UITapGestureRecognizer) {
+    // MARK: - Private methods
+
+    @objc private func scrollerTapped(_ gesture: UITapGestureRecognizer) {
         let location = gesture.location(in: self.titleScroller)
         guard let index = titleScroller.titleLabels.index(where: { $0.frame.contains(location) })
             else { return }

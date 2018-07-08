@@ -16,13 +16,13 @@ struct DeviceSize {
     }
 
     //デバイスの画面の横サイズを取得
-    static var screenWidth: Int {
-        return Int(UIScreen.main.bounds.size.width)
+    static var screenWidth: CGFloat {
+        return UIScreen.main.bounds.size.width
     }
 
     //デバイスの画面の縦サイズを取得
-    static var screenHeight: Int {
-        return Int(UIScreen.main.bounds.size.height)
+    static var screenHeight: CGFloat {
+        return UIScreen.main.bounds.size.height
     }
 
 }
