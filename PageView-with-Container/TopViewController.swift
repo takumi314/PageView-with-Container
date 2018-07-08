@@ -18,6 +18,7 @@ class TopViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.themed.on(ThemeManager.current)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -35,6 +36,11 @@ class TopViewController: UIViewController {
         let _ = segue.destination
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+    }
+
+    @IBAction func onThppedSettings(_ sender: UIBarButtonItem) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: SettingViewController.identifier)
+        present(vc, animated: true)
     }
 
     @IBAction func onTappedRefresh(_ sender: UIBarButtonItem) {
