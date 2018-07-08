@@ -46,6 +46,7 @@ class ContainerViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        view.themed.on(ThemeManager.current)
     }
 
     override func viewDidAppear(_ animated: Bool) {

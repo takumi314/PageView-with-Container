@@ -18,6 +18,7 @@ class TopViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.themed.on(ThemeManager.current)
     }
 
     override func viewDidAppear(_ animated: Bool) {
