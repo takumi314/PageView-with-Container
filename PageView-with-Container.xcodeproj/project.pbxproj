@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10F7D9320F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */; };
+		E10F7D9420F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */; };
 		E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */; };
 		E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */; };
 		E1D4EDD320EFC56E0030EAB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D4EDD120EFC56E0030EAB7 /* Main.storyboard */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+Header.swift"; sourceTree = "<group>"; };
 		E1D4EDCA20EFC56E0030EAB7 /* PageView-with-Container.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PageView-with-Container.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 				E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */,
 				E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */,
 				E1D4EDED20EFD3BC0030EAB7 /* ContainerViewController.swift */,
+				E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */,
 				E1D4EDD120EFC56E0030EAB7 /* Main.storyboard */,
 				E1D4EDD420EFC5720030EAB7 /* Assets.xcassets */,
 				E1D4EDD620EFC5720030EAB7 /* LaunchScreen.storyboard */,
@@ -250,6 +254,7 @@
 				E1D4EDF020F068130030EAB7 /* DeviceSize.swift in Sources */,
 				E1D4EDF920F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
 				E1D4EE0620F127570030EAB7 /* ThemeManager.swift in Sources */,
+				E10F7D9320F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */,
 				E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */,
 				E1D4EDFE20F113A00030EAB7 /* TargetedExtension.swift in Sources */,
 			);
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10F7D9420F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */,
 				E1D4EDF720F06EC30030EAB7 /* Identiable.swift in Sources */,
 				E1D4EDF120F068130030EAB7 /* DeviceSize.swift in Sources */,
 				E1D4EDFA20F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
