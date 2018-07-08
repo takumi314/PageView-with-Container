@@ -16,8 +16,8 @@ class SettingViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstCheckedImage.isHidden = false
-        secondCheckedImage.isHidden = true
+        firstCheckedImage.isHidden = !ThemeManager.current.settings
+        secondCheckedImage.isHidden = ThemeManager.current.settings
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -30,10 +30,12 @@ class SettingViewController: UITableViewController {
         case (0, 0):
             firstCheckedImage.isHidden = false
             secondCheckedImage.isHidden = true
+            ThemeManager.current.useNormal()
             break
         case (0, 1):
             firstCheckedImage.isHidden = true
             secondCheckedImage.isHidden = false
+            ThemeManager.current.useSpecific()
             break
         case (1, 0):
             dismiss(animated: true) {
