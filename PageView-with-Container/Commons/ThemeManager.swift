@@ -8,14 +8,31 @@
 
 import UIKit
 
-struct ThemeManager {
-    static let current = ThemeManager()
+class ThemeManager {
+    static var current = ThemeManager()
 
     var color: UIColor {
-        return .blue
+        return ThemeManager.current.isNormal ? .blue : .red
     }
     var image: UIImage {
         return UIImage()
     }
+
+    var settings: Bool {
+        get {
+            return ThemeManager.current.isNormal
+        }
+    }
+
+    private var isNormal = true
+
+    func useNormal() {
+        ThemeManager.current.isNormal = true
+    }
+
+    func useSpecific() {
+        ThemeManager.current.isNormal = false
+    }
+
 }
 

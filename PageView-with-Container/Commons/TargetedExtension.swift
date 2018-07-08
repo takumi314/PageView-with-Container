@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct TargetedExtension<T> {
+class TargetedExtension<T> {
     private let base: T
     init(_ base: T) {
         self.base = base
