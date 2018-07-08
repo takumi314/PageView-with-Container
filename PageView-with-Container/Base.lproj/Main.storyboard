@@ -28,12 +28,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-ck-hv7">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheched_mark" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-ck-hv7">
                                                     <rect key="frame" x="321" y="7" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <string key="image" base64-UTF8="YES">
-HWNoY2tlZF9tYXJrA
-</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Z-oX-K2N">
                                                     <rect key="frame" x="29" y="12" width="162" height="21"/>
@@ -54,12 +51,9 @@ HWNoY2tlZF9tYXJrA
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYy-1Y-4iv">
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cheched_mark" translatesAutoresizingMaskIntoConstraints="NO" id="PYy-1Y-4iv">
                                                     <rect key="frame" x="320" y="7" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                    <string key="image" base64-UTF8="YES">
-HWNoY2tlZF9tYXJrA
-</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Specific" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT9-cJ-qMr">
                                                     <rect key="frame" x="28" y="11" width="162" height="21"/>
@@ -235,10 +229,6 @@ HWNoY2tlZF9tYXJrA
         </scene>
     </scenes>
     <resources>
-        <image width="256" height="256">
-            <string key="name" base64-UTF8="YES">
-HWNoY2tlZF9tYXJrA
-</string>
-        </image>
+        <image name="cheched_mark" width="256" height="256"/>
     </resources>
 </document>
