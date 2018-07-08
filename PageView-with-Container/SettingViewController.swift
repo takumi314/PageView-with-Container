@@ -22,8 +22,6 @@ class SettingViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-//        firstCheckedImage.image = UIImage(contentsOfFile: "chcked_mark.png")
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -36,6 +34,11 @@ class SettingViewController: UITableViewController {
         case (0, 1):
             firstCheckedImage.isHidden = true
             secondCheckedImage.isHidden = false
+            break
+        case (1, 0):
+            dismiss(animated: true) {
+                // completion
+            }
             break
         default:
             break
