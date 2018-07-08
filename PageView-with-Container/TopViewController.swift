@@ -37,6 +37,11 @@ class TopViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
 
+    @IBAction func onThppedSettings(_ sender: UIBarButtonItem) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: SettingViewController.identifier)
+        present(vc, animated: true)
+    }
+
     @IBAction func onTappedRefresh(_ sender: UIBarButtonItem) {
         guard let container = self.childViewControllers.compactMap({ $0 as? ContainerViewController }).first else {
             return
