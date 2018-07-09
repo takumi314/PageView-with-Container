@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E10F7D9320F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */; };
 		E10F7D9620F27B350019B588 /* TitleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9520F27B350019B588 /* TitleScrollView.swift */; };
+		E10F7D9A20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */; };
+		E10F7D9B20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */; };
 		E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */; };
 		E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */; };
 		E1D4EDD320EFC56E0030EAB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D4EDD120EFC56E0030EAB7 /* Main.storyboard */; };
@@ -46,6 +48,7 @@
 /* Begin PBXFileReference section */
 		E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+Header.swift"; sourceTree = "<group>"; };
 		E10F7D9520F27B350019B588 /* TitleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScrollView.swift; sourceTree = "<group>"; };
+		E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+UIScrollDelegate.swift"; sourceTree = "<group>"; };
 		E1D4EDCA20EFC56E0030EAB7 /* PageView-with-Container.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PageView-with-Container.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 				E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */,
 				E10F7D9520F27B350019B588 /* TitleScrollView.swift */,
 				E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */,
+				E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */,
 			);
 			path = TopViewContainer;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 				E1D4EE0620F127570030EAB7 /* ThemeManager.swift in Sources */,
 				E10F7D9320F25A3C0019B588 /* ContainerViewController+Header.swift in Sources */,
 				E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */,
+				E10F7D9A20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */,
 				E1D4EDFE20F113A00030EAB7 /* TargetedExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +285,7 @@
 				E1D4EE0A20F1B4530030EAB7 /* SettingViewController.swift in Sources */,
 				E1D4EDE320EFC5730030EAB7 /* PageView_with_ContainerUITests.swift in Sources */,
 				E1D4EDFF20F113A00030EAB7 /* TargetedExtension.swift in Sources */,
+				E10F7D9B20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */,
 				E1D4EE0720F127570030EAB7 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

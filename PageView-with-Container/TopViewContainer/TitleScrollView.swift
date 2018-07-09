@@ -24,6 +24,8 @@ class TitleScrollView: UIScrollView {
         return titleLabels[index]
     }
 
+    var didTapTitle: Bool = false
+
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

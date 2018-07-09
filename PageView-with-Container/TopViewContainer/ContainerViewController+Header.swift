@@ -51,13 +51,14 @@ extension ContainerViewController: TitleScrollViewDelegate {
     public func updateHeaer<T: HeaderCompatible>(items: [T]) {
 
         self.titleScroller.titleDelegate = self
+        self.titleScroller.delegate = self
 
         let titles = items.map({ $0.name })
         let titleWidth = HeaderConfiguration.rightPadding + HeaderConfiguration.width + HeaderConfiguration.rightPadding
 
         var valueX: CGFloat = 0.0
         var index: Int = 0
-        valueX += DeviceSize.screenWidth - titleWidth / 2.0
+        valueX += (DeviceSize.screenWidth - titleWidth) / 2.0
 
         for title in titles {
 
@@ -82,6 +83,8 @@ extension ContainerViewController: TitleScrollViewDelegate {
 
         }
 
+        valueX += (DeviceSize.screenWidth - titleWidth) / 2.0
+
         self.titleScroller.contentSize = CGSize(width: valueX,
                                                 height: self.titleScroller.bounds.height)
         scrollToView(at: 0, animated: false)
@@ -91,6 +94,14 @@ extension ContainerViewController: TitleScrollViewDelegate {
         self.titleScroller.addGestureRecognizer(tap)
     }
 
+    func scrollToView(at index: Int, animated: Bool = true) {
+        let titleLabel = titleScroller.titleLabels[index]
+        let targetCenter = titleLabel.center
+        let targetOffsetX = targetCenter.x - self.titleScroller.bounds.width / 2
+
+        self.titleScroller.setContentOffset(CGPoint(x: targetOffsetX, y: 0), animated: animated)
+    }
+
     // MARK: - Private methods
 
     @objc private func scrollerTapped(_ gesture: UITapGestureRecognizer) {
@@ -98,15 +109,14 @@ extension ContainerViewController: TitleScrollViewDelegate {
         guard let index = titleScroller.titleLabels.index(where: { $0.frame.contains(location) })
             else { return }
         titleScroller.titleDelegate?.titleScrollerView(self.titleScroller, didSelectViewAt: index)
+
+        titleScroller.didTapTitle = true
         scrollToView(at: index)
-    }
 
-    private func scrollToView(at index: Int, animated: Bool = true) {
-        let contentView = titleScroller.titleLabels[index]
-        let targetCenter = contentView.center
-        let targetOffsetX = targetCenter.x - self.titleScroller.bounds.width / 2
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.titleScroller.didTapTitle = false
+        }
 
-        self.titleScroller.setContentOffset(CGPoint(x: targetOffsetX, y: 0), animated: animated)
     }
 
     private func showDataForTitle(at index: Int) {
@@ -128,14 +138,14 @@ extension ContainerViewController: TitleScrollViewDelegate {
 
     func titleScrollerView(_ titleScrollView: TitleScrollView, didSelectViewAt index: Int) {
 
-        let previousAlbumView = titleScrollView.view(at: titleScrollView.currentTitleIndex)
+        let previousTitleLabel = titleScrollView.view(at: titleScrollView.currentTitleIndex)
 
-        UIView.animate(withDuration: 0.8) {
-            previousAlbumView.highlightTitle(false)
+        UIView.animate(withDuration: 0.5) {
+            previousTitleLabel.highlightTitle(false)
             self.titleScroller.currentTitleIndex = index
 
-            let albumView = titleScrollView.view(at: titleScrollView.currentTitleIndex)
-            albumView.highlightTitle(true)
+            let titleLabel = titleScrollView.view(at: titleScrollView.currentTitleIndex)
+            titleLabel.highlightTitle(true)
         }
 
     }
