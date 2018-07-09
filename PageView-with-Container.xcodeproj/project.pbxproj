@@ -11,6 +11,12 @@
 		E10F7D9620F27B350019B588 /* TitleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9520F27B350019B588 /* TitleScrollView.swift */; };
 		E10F7D9A20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */; };
 		E10F7D9B20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */; };
+		E10F7D9D20F3A7AF0019B588 /* ContainerViewController+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9C20F3A7AF0019B588 /* ContainerViewController+Body.swift */; };
+		E10F7D9E20F3A7AF0019B588 /* ContainerViewController+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7D9C20F3A7AF0019B588 /* ContainerViewController+Body.swift */; };
+		E10F7DA020F3A8710019B588 /* BodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10F7D9F20F3A8710019B588 /* BodyView.xib */; };
+		E10F7DA120F3A8710019B588 /* BodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10F7D9F20F3A8710019B588 /* BodyView.xib */; };
+		E10F7DA320F3AC5D0019B588 /* ContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7DA220F3AC5D0019B588 /* ContentScrollView.swift */; };
+		E10F7DA420F3AC5D0019B588 /* ContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F7DA220F3AC5D0019B588 /* ContentScrollView.swift */; };
 		E1D4EDCE20EFC56E0030EAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */; };
 		E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */; };
 		E1D4EDD320EFC56E0030EAB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D4EDD120EFC56E0030EAB7 /* Main.storyboard */; };
@@ -49,6 +55,9 @@
 		E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+Header.swift"; sourceTree = "<group>"; };
 		E10F7D9520F27B350019B588 /* TitleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScrollView.swift; sourceTree = "<group>"; };
 		E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+UIScrollDelegate.swift"; sourceTree = "<group>"; };
+		E10F7D9C20F3A7AF0019B588 /* ContainerViewController+Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContainerViewController+Body.swift"; sourceTree = "<group>"; };
+		E10F7D9F20F3A8710019B588 /* BodyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyView.xib; sourceTree = "<group>"; };
+		E10F7DA220F3AC5D0019B588 /* ContentScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScrollView.swift; sourceTree = "<group>"; };
 		E1D4EDCA20EFC56E0030EAB7 /* PageView-with-Container.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PageView-with-Container.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D4EDCD20EFC56E0030EAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D4EDCF20EFC56E0030EAB7 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +102,12 @@
 			children = (
 				E1D4EDED20EFD3BC0030EAB7 /* ContainerViewController.swift */,
 				E10F7D9220F25A3C0019B588 /* ContainerViewController+Header.swift */,
-				E10F7D9520F27B350019B588 /* TitleScrollView.swift */,
-				E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */,
+				E10F7D9C20F3A7AF0019B588 /* ContainerViewController+Body.swift */,
 				E10F7D9920F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift */,
+				E10F7D9F20F3A8710019B588 /* BodyView.xib */,
+				E10F7D9520F27B350019B588 /* TitleScrollView.swift */,
+				E10F7DA220F3AC5D0019B588 /* ContentScrollView.swift */,
+				E1D4EDF220F06D4A0030EAB7 /* LoadingViewController.swift */,
 			);
 			path = TopViewContainer;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			files = (
 				E1D4EDD820EFC5720030EAB7 /* LaunchScreen.storyboard in Resources */,
 				E1D4EDD520EFC5720030EAB7 /* Assets.xcassets in Resources */,
+				E10F7DA020F3A8710019B588 /* BodyView.xib in Resources */,
 				E1D4EDD320EFC56E0030EAB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10F7DA120F3A8710019B588 /* BodyView.xib in Resources */,
 				E1D4EE0B20F1B80D0030EAB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,10 +274,12 @@
 			files = (
 				E1D4EDF620F06EC30030EAB7 /* Identiable.swift in Sources */,
 				E1D4EE0920F1B4530030EAB7 /* SettingViewController.swift in Sources */,
+				E10F7D9D20F3A7AF0019B588 /* ContainerViewController+Body.swift in Sources */,
 				E1D4EDD020EFC56E0030EAB7 /* TopViewController.swift in Sources */,
 				E1D4EDEE20EFD3BC0030EAB7 /* ContainerViewController.swift in Sources */,
 				E1D4EDF320F06D4A0030EAB7 /* LoadingViewController.swift in Sources */,
 				E10F7D9620F27B350019B588 /* TitleScrollView.swift in Sources */,
+				E10F7DA320F3AC5D0019B588 /* ContentScrollView.swift in Sources */,
 				E1D4EE0420F1265E0030EAB7 /* ThemeExtensionCompatible.swift in Sources */,
 				E1D4EDF020F068130030EAB7 /* DeviceSize.swift in Sources */,
 				E1D4EDF920F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
@@ -284,6 +300,8 @@
 				E1D4EDFA20F070E60030EAB7 /* UIViewControllerExtension.swift in Sources */,
 				E1D4EE0A20F1B4530030EAB7 /* SettingViewController.swift in Sources */,
 				E1D4EDE320EFC5730030EAB7 /* PageView_with_ContainerUITests.swift in Sources */,
+				E10F7DA420F3AC5D0019B588 /* ContentScrollView.swift in Sources */,
+				E10F7D9E20F3A7AF0019B588 /* ContainerViewController+Body.swift in Sources */,
 				E1D4EDFF20F113A00030EAB7 /* TargetedExtension.swift in Sources */,
 				E10F7D9B20F289FD0019B588 /* ContainerViewController+UIScrollDelegate.swift in Sources */,
 				E1D4EE0720F127570030EAB7 /* ThemeManager.swift in Sources */,

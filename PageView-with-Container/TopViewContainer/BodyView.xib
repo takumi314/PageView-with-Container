@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BodyView" customModule="PageView_with_Container" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-G3-uzo">
+                    <rect key="frame" x="0.0" y="160" width="452" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="g2c-GB-cNN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-7n-0FR">
+                    <rect key="frame" x="0.0" y="120" width="452" height="40"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ILj-tv-NSL"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="K2G-gy-riS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hx-M6-ANY">
+                    <rect key="frame" x="0.0" y="0.0" width="452" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOg-0E-M4a">
+                            <rect key="frame" x="190.5" y="42" width="71" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="yOg-0E-M4a" firstAttribute="centerX" secondItem="7hx-M6-ANY" secondAttribute="centerX" id="4Xc-X6-ro7"/>
+                        <constraint firstItem="yOg-0E-M4a" firstAttribute="centerY" secondItem="7hx-M6-ANY" secondAttribute="centerY" id="WEm-Pl-4Ek"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uKj-7n-0FR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cg6-lx-Qh6"/>
+                <constraint firstItem="7hx-M6-ANY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Fqo-jV-gKj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7hx-M6-ANY" secondAttribute="trailing" id="Go5-dk-Amd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Mxw-G3-uzo" secondAttribute="bottom" id="H2p-AB-DKm"/>
+                <constraint firstItem="Mxw-G3-uzo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MUS-H0-FsP"/>
+                <constraint firstItem="uKj-7n-0FR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZV9-Sf-e8m"/>
+                <constraint firstItem="Mxw-G3-uzo" firstAttribute="top" secondItem="uKj-7n-0FR" secondAttribute="bottom" id="gdH-u9-VHy"/>
+                <constraint firstItem="uKj-7n-0FR" firstAttribute="top" secondItem="7hx-M6-ANY" secondAttribute="bottom" id="kgU-Np-mGc"/>
+                <constraint firstItem="Mxw-G3-uzo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="q5W-iT-hQ8"/>
+                <constraint firstItem="7hx-M6-ANY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qwI-F1-Y3p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bodyLabel" destination="yOg-0E-M4a" id="zbs-Aq-SDC"/>
+                <outlet property="firstView" destination="uKj-7n-0FR" id="rX0-0a-b8r"/>
+                <outlet property="mainView" destination="7hx-M6-ANY" id="iCA-uc-XYZ"/>
+                <outlet property="secondView" destination="Mxw-G3-uzo" id="In9-3N-GAg"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-302.5"/>
+        </view>
+    </objects>
+</document>

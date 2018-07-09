@@ -174,7 +174,7 @@
                                     <constraint firstAttribute="height" constant="50" id="YRf-rv-Rum"/>
                                 </constraints>
                             </scrollView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ij5-Hi-KNy">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ij5-Hi-KNy" customClass="ContentScrollView" customModule="PageView_with_Container" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="100" width="375" height="200"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-dH-ER2">

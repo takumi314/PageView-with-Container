@@ -48,7 +48,7 @@ class TitleLabel: UILabel {
 
 extension ContainerViewController: TitleScrollViewDelegate {
 
-    public func updateHeaer<T: HeaderCompatible>(items: [T]) {
+    public func updateHeader<T: HeaderCompatible>(items: [T]) {
 
         self.titleScroller.titleDelegate = self
         self.titleScroller.delegate = self
@@ -112,6 +112,7 @@ extension ContainerViewController: TitleScrollViewDelegate {
 
         titleScroller.didTapTitle = true
         scrollToView(at: index)
+        contentScrollToView(at: index)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.titleScroller.didTapTitle = false
@@ -143,6 +144,8 @@ extension ContainerViewController: TitleScrollViewDelegate {
         UIView.animate(withDuration: 0.5) {
             previousTitleLabel.highlightTitle(false)
             self.titleScroller.currentTitleIndex = index
+
+            self.contentScrollToView(at: index)
 
             let titleLabel = titleScrollView.view(at: titleScrollView.currentTitleIndex)
             titleLabel.highlightTitle(true)

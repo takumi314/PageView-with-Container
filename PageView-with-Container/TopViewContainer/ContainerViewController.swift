@@ -38,7 +38,7 @@ class ContainerViewController: UIViewController {
 
     @IBOutlet weak var titleScroller: TitleScrollView!
     @IBOutlet weak var lineSegment: UISegmentedControl!
-    @IBOutlet weak var contentScroller: UIScrollView!
+    @IBOutlet weak var contentScroller: ContentScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,10 @@ class ContainerViewController: UIViewController {
         view.themed.on(ThemeManager.current)
 
         let titles = [Station(name: "AAAA"), Station(name: "BBBBB"), Station(name: "CCCC"), Station(name: "DDDDDD")]
-        updateHeaer(items: titles)
+        updateHeader(items: titles)
+
+        let bodies = [Content(name: "AAAA"), Content(name: "BBBBB"), Content(name: "CCCC"), Content(name: "DDDDDD")]
+        updateBody(items: bodies)
     }
 
     override func viewDidAppear(_ animated: Bool) {
