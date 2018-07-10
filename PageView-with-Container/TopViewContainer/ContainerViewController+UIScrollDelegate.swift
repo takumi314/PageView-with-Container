@@ -26,8 +26,7 @@ extension ContainerViewController: UIScrollViewDelegate {
             }
             contentScroller.currentContentIndex = index
             
-            contentScrollToView(at: index)
-            scrollToView(at: index, animated: true)
+            scrollToView(at: index, animated: false)
             return
         }
 
