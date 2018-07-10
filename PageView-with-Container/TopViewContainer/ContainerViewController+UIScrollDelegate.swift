@@ -33,4 +33,27 @@ extension ContainerViewController: UIScrollViewDelegate {
 
     }
 
+    // MARK: - Private
+
+    // スクロール位置より現在のページ番号を返す
+    func currentPageIndex(at scrollView: ContentScrollView) -> Int {
+
+        // width of a page
+        let width = scrollView.frame.size.width
+
+        // maximum page index
+        let maxPageIndex = CGFloat(scrollView.bodyViews.count - 1)
+
+        // current display position
+        let positionX = scrollView.contentOffset.x + width / 2.0
+        // 375
+
+        var paging = positionX / width
+
+        paging = (paging >= 0.0) ? paging : 0.0
+        paging = (paging <= maxPageIndex) ? paging : maxPageIndex
+
+        return Int(paging)
+    }
+
 }
