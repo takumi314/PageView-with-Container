@@ -13,11 +13,25 @@ extension ContainerViewController: UIScrollViewDelegate {
     // MARK: - UIScrollViewDelegate
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset)
+
         let centerX = scrollView.bounds.width / 2.0
         let centerTitleX = scrollView.contentOffset.x + centerX
         let centerTitleY = scrollView.contentOffset.y
 
+        // For ContentScrollView
+        if let contentScrollView = scrollView as? ContentScrollView {
+            let index = currentPageIndex(at: contentScrollView)
+            if index == contentScroller.currentContentIndex {
+                return
+            }
+            contentScroller.currentContentIndex = index
+            
+            contentScrollToView(at: index)
+            scrollToView(at: index, animated: true)
+            return
+        }
+
+        // For TitleScrollView and being tapped on UILabel
         if !self.titleScroller.didTapTitle {
             guard let titleScroller = scrollView as? TitleScrollView else {
                 return
