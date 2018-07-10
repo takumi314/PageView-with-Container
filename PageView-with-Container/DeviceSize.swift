@@ -11,18 +11,18 @@ import UIKit
 struct DeviceSize {
 
     //デバイスのCGRectを取得
-    static func bounds() -> CGRect {
+    static var bounds: CGRect {
         return UIScreen.main.bounds
     }
 
     //デバイスの画面の横サイズを取得
-    static func screenWidth() -> Int {
-        return Int(UIScreen.main.bounds.size.width)
+    static var screenWidth: CGFloat {
+        return UIScreen.main.bounds.size.width
     }
 
     //デバイスの画面の縦サイズを取得
-    static func screenHeight() -> Int {
-        return Int(UIScreen.main.bounds.size.height)
+    static var screenHeight: CGFloat {
+        return UIScreen.main.bounds.size.height
     }
 
 }

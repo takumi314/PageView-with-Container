@@ -36,9 +36,9 @@ extension Refreshable where Self: ContainerViewController {
 
 class ContainerViewController: UIViewController {
 
-    @IBOutlet private weak var titleScroller: UIScrollView!
-    @IBOutlet private weak var lineSegment: UISegmentedControl!
-    @IBOutlet private weak var contentScroller: UIScrollView!
+    @IBOutlet weak var titleScroller: TitleScrollView!
+    @IBOutlet weak var lineSegment: UISegmentedControl!
+    @IBOutlet weak var contentScroller: ContentScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,12 @@ class ContainerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.themed.on(ThemeManager.current)
+
+        let titles = [Station(name: "AAAA"), Station(name: "BBBBB"), Station(name: "CCCC"), Station(name: "DDDDDD")]
+        updateHeader(items: titles)
+
+        let bodies = [Content(name: "AAAA"), Content(name: "BBBBB"), Content(name: "CCCC"), Content(name: "DDDDDD")]
+        updateBody(items: bodies)
     }
 
     override func viewDidAppear(_ animated: Bool) {
